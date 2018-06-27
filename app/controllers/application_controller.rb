@@ -5,10 +5,11 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  get '/' do 
+  get '/' do
     erb :index.html
   end
 
-  get '/quiz' do 
+  get '/quiz' do
+    @quiz = Quiz.find_by_id
   end
 end
