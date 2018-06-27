@@ -9,6 +9,11 @@ attr_accessor :id, :title, :questions, :results
     @results = []
     save
   end
+
+def self.all 
+  @all 
+end
+  
 end
 
 quiz = Quiz.new(1, "Should I go out tonight?")
