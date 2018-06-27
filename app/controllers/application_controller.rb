@@ -9,4 +9,6 @@ class ApplicationController < Sinatra::Base
     erb :index.html
   end
 
+  get '/quiz' do 
+  end
 end
