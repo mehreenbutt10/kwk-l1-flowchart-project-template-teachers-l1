@@ -54,3 +54,6 @@ question_1 = Question.new(:id => "Q1", :text => "Are you tired?", :answers => {
 "No" => "Q2"
 })
 quiz.add_question(question_1)
+yes_result = Result.new(:id => "R1", :text => "Yes, go out.")
+
+quiz.add_result(yes_result)
