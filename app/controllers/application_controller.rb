@@ -6,12 +6,14 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    erb :index.html
+    erb :'index.html'
   end
 
   get '/quiz' do
     @quiz = Quiz.find_by_id(params[:id])
     @question = @quiz.questions.first
+
+    erb :'quiz.html'
   end
 
   post '/quiz/:id' do
