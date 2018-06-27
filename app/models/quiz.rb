@@ -7,7 +7,7 @@ class Quiz
   def initialize(id, title)
     @id = id
     @title = title
-    @@questions = []
-    @@results = []
+    @questions = []
+    @results = []
   end
 end
