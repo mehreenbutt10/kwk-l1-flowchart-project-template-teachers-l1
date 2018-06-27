@@ -40,8 +40,11 @@ def self.find_by_id(id)
   end
 
   def add_question(question)
-
+    self.questions << question
   end
+
+  def add_result(result)
+    self.results << result
 end
 
 quiz = Quiz.new(1, "Should I go out tonight?")
