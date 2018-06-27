@@ -24,6 +24,8 @@ def self.find_by_id(id)
       find_question(step_id)
     elsif step_id.start_with?("R")
       find_result(step_id)
+    end
+  end
 
 end
 
