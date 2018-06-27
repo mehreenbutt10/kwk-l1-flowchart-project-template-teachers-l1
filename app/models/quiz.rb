@@ -38,6 +38,10 @@ def self.find_by_id(id)
   def save
     @all << self
   end
+
+  def add_question(question)
+
+  end
 end
 
 quiz = Quiz.new(1, "Should I go out tonight?")
