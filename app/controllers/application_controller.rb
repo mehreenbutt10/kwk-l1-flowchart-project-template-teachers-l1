@@ -16,7 +16,5 @@ class ApplicationController < Sinatra::Base
     erb :'quiz.html'
   end
 
-  post '/quiz/:id' do
-    @quiz = params[:id]
-  end
+  
 end
