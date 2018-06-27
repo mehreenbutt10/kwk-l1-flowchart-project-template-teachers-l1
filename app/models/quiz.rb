@@ -36,7 +36,7 @@ def self.find_by_id(id)
   end
 
   def save
-    @all
+    @all << self
   end
 end
 
