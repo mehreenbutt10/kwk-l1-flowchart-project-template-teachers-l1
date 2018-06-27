@@ -58,3 +58,5 @@ quiz.add_question(question_1)
 yes_result = Result.new(:id => "R1", :text => "Yes, go out.")
 
 quiz.add_result(yes_result)
+q1 = quiz.next_step("Q1")
+r1 = quiz.next_step("R1")
