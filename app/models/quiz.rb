@@ -15,6 +15,9 @@ def self.all
 end
 
 def self.find_by_id(id)
+  @all.detect{
+    |q| q.id.to_s
+  }
 
 end
 
