@@ -2,8 +2,8 @@ class Result
   attr_accessor :id, :text
 
   def initialize(data={})
-    @id = id
-    @text = text
+    @id = data[:id]
+    @text = data[:text]
   end
 
 end
