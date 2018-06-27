@@ -4,7 +4,7 @@ class Quiz
   #an array holding the instances of the quiz.
   @@results = []
   #an array holding onto the possible results of the quiz.
-  def initialize(title)
+  def initialize(id, title)
     @title = title
-  end 
+  end
 end
