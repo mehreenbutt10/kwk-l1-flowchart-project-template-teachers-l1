@@ -33,6 +33,11 @@ def self.find_by_id(id)
 
   def find_result(step_id)
     @results.detect{|r| r.id == step_id}
+  end
+
+  def save
+
+  end
 end
 
 quiz = Quiz.new(1, "Should I go out tonight?")
