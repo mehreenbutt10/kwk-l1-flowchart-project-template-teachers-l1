@@ -28,7 +28,7 @@ def self.find_by_id(id)
   end
 
   def find_question(step_id)
-    @questions.detect{|q| q.id}
+    @questions.detect{|q| q.id == step_id}
 end
 
 quiz = Quiz.new(1, "Should I go out tonight?")
