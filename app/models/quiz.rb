@@ -19,6 +19,12 @@ def self.find_by_id(id)
     |q| q.id.to_s == id.to_s
   }
 
+  def next_step(step_id)
+    if step_id.start_with?("Q")
+      find_question(step_id)
+    elsif step_id.start_with?("R")
+      find_result(step_id)
+
 end
 
 quiz = Quiz.new(1, "Should I go out tonight?")
@@ -26,3 +32,4 @@ question_1 = Question.new(:id => "Q1", :text => "Are you tired?", :answers => {
 "Yes" => "R2",
 "No" => "Q2"
 })
+quiz.add_question(question_1)
