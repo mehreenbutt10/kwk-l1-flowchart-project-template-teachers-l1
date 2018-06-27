@@ -14,5 +14,7 @@ class ApplicationController < Sinatra::Base
     @question = @quiz.questions.first
   end
 
-  post '/quiz/:id'
+  post '/quiz/:id' do
+
+  end
 end
