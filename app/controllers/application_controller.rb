@@ -15,6 +15,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/quiz/:id' do
-
+    @quiz
   end
 end
