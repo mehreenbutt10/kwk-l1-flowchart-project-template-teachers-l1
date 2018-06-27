@@ -10,6 +10,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/quiz' do
-    @quiz = Quiz.find_by_id
+    @quiz = Quiz.find_by_id(params[:id])
   end
 end
