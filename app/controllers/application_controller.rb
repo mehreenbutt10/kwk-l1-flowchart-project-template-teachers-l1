@@ -11,5 +11,6 @@ class ApplicationController < Sinatra::Base
 
   get '/quiz' do
     @quiz = Quiz.find_by_id(params[:id])
+    @question = @quiz.questions.first
   end
 end
