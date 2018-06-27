@@ -6,6 +6,7 @@ class Question
     @text = data[:text]
     @answers = data[:answers]
   end
+  
 end
 
 question_1 = Question.new(:id => "Q1", :text =>"Are you tired?", :answers => {
