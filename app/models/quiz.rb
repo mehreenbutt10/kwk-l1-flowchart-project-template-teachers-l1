@@ -16,7 +16,7 @@ end
 
 def self.find_by_id(id)
   @all.detect{
-    |q| q.id.to_s
+    |q| q.id.to_s == id.to_s
   }
 
 end
