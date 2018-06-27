@@ -13,4 +13,6 @@ class ApplicationController < Sinatra::Base
     @quiz = Quiz.find_by_id(params[:id])
     @question = @quiz.questions.first
   end
+
+  post '/quiz/:id'
 end
