@@ -22,3 +22,7 @@ def self.find_by_id(id)
 end
 
 quiz = Quiz.new(1, "Should I go out tonight?")
+question_1 = Question.new(:id => "Q1", :text => "Are you tired?", :answers => {
+"Yes" => "R2",
+"No" => "Q2"
+})
